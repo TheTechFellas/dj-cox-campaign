@@ -155,7 +155,7 @@ h6, .h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 abbr[title],
@@ -236,11 +236,11 @@ sup {
 }
 
 a {
-  color: #ee0979;
+  color: #5599dd;
   text-decoration: underline;
 }
 a:hover {
-  color: #be0761;
+  color: #5599dd;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -7317,9 +7317,9 @@ textarea.form-control-lg {
   margin-top: 1rem !important;
 }
 
-.mt-4 {
+/* .mt-4 {
   margin-top: 1.5rem !important;
-}
+} */
 
 /* .mt-5 {
   margin-top: 3rem !important;
@@ -11389,4 +11389,29 @@ header.masthead .bg-circle-4 {
     widows: 100px;
     height: 50px;
   } */
+
+  .resize {
+    width: 400px;
+    height: auto;
+}
+
+.resizeBannerLogo {
+    width: 100px;
+    height: auto;
+}
+
+.newButtonColor {
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color:#00408F;
+  text-align:center;
+  transition: all 0.2s;}
+
 }

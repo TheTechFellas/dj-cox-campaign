@@ -23,7 +23,9 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
         <div class="container px-5">
-            <a class="navbar-brand" href="#page-top">Insert banner here</a>
+            <a class="navbar-brand" href="#page-top">
+                <img class="resizeBannerLogo" src="assets/img/imgSpecific/0001.png">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
                     class="navbar-toggler-icon"></span></button>
@@ -47,12 +49,12 @@
                 <!-- <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll"></a> -->
 
                 <!-- <div > -->
-                <a class="btn btn-primary btn-xl rounded-pill mt-5" target="_blank" rel="noopener noreferrer" href="https://secure.actblue.com/entity/fundraisers/131277">Scan or click to Contribute!</a>
+                <a class="newButtonColor" target="_blank" rel="noopener noreferrer" href="https://secure.actblue.com/entity/fundraisers/131277">Scan or click to Contribute!</a>
                 <p> 
                     <img src="assets/img/imgSpecific/suit_with_flag1NoBgPt3.png">
 
                     <a target="_blank" rel="noopener noreferrer" href="https://secure.actblue.com/entity/fundraisers/131277">
-                        <img style="line-break: normal; padding-top: 92px;" src="/Users/jordanspringer/Documents/Dev/djcox/assets/img/ActBlueQR.jpg">
+                        <img style="line-break: normal; padding-top: 92px;" src="assets/img/ActBlueQR.jpg">
                         
                     </a>
                 </p>
@@ -208,7 +210,7 @@
                             </form>
 
                             <div class="text-center text-md-left">
-                                <a class="btn btn-primary"
+                                <a class="newButtonColor"
                                     onclick="document.getElementById('contact-form').submit();">Send</a>
                             </div>
                             <div class="status"></div>
@@ -219,17 +221,17 @@
                         <div class="col-md-3 text-center">
                             <ul class="list-unstyled mb-0">
 
-                                <!-- address -->
-                                <!-- <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>San Francisco, CA 94126, USA</p>
-                </li> -->
-
                                 <li><i class="fas fa-phone mt-4 fa-2x"></i>
                                     <p>+ 01 234 567 89</p>
                                 </li>
+                                <p>Looking to Volunteer?</p>
+                                <input type="radio">
+                                <label for="yes">Yes</label>
+                                <input type="radio">
+                                <label for="no">No</label>
 
                                 <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                                    <p>contact@mdbootstrap.com</p>
+                                    <p>Thecoxcampaign@gmail.com</p>
                                 </li>
                             </ul>
                         </div>
@@ -241,103 +243,6 @@
                 <!--Section: Contact v.2-->
 
                 <!-- This is where contact form Ends -->
-
-
-
-                <!-- This is where volunteer form starts -->
-
-                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p> -->
-                <!--Section: Contact v.2-->
-                <section class="mb-4">
-
-                    <!--Section heading-->
-                    <h2 class="h1-responsive font-weight-bold text-center my-4">Looking to help out?</h2>
-                    <!--Section description-->
-                    <p class="text-center w-responsive mx-auto mb-5">All the help is grately appreciated. Here is some
-                        more example text. My name is Jordan Springer</p>
-
-                    <div class="row" style="margin-bottom: 2rem;">
-
-                        <!--Grid column-->
-                        <div class="col-md-9 mb-md-0 mb-5">
-                            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                                <!--Grid row-->
-                                <div class="row">
-
-                                    <!--Grid column-->
-                                    <div class="col-md-6">
-                                        <div class="md-form mb-0">
-                                            <input type="text" id="name" name="name" class="form-control">
-                                            <label for="name" class="">Your name</label>
-                                        </div>
-                                    </div>
-                                    <!--Grid column-->
-
-                                    <!--Grid column-->
-                                    <div class="col-md-6">
-                                        <div class="md-form mb-0">
-                                            <input type="text" id="email" name="email" class="form-control">
-                                            <label for="email" class="">Your email</label>
-                                        </div>
-                                    </div>
-                                    <!--Grid column-->
-
-                                    <!--Grid column-->
-                                    <div class="col-md-6">
-                                        <div class="md-form mb-0">
-                                            <input type="text" id="phone" name="phone" class="form-control">
-                                            <label for="phone" class="">Your preferred phone number</label>
-                                        </div>
-                                    </div>
-                                    <!--Grid column-->
-
-                                </div>
-                                <!--Grid row-->
-
-                                <!--Grid row-->
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="md-form mb-0">
-                                            <input type="text" id="subject" name="subject" class="form-control">
-                                            <label for="subject" class="">Subject</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Grid row-->
-
-                                <!--Grid row-->
-                                <div class="row">
-
-                                    <!--Grid column-->
-                                    <div class="col-md-12">
-
-                                        <div class="md-form">
-                                            <textarea type="text" id="message" name="message" rows="2"
-                                                class="form-control md-textarea"></textarea>
-                                            <label for="message">Your message</label>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!--Grid row-->
-
-                            </form>
-
-                            <div class="text-center text-md-left">
-                                <a class="btn btn-primary"
-                                    onclick="document.getElementById('contact-form').submit();">Send</a>
-                            </div>
-
-                            <div class="status"></div>
-                        </div>
-
-                </section>
-                <!--Section: Contact v.2-->
-
-                <!-- This is where volunteer form ends -->
-
-
 
             </div>
         </div>
