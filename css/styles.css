@@ -11326,13 +11326,14 @@ header.masthead {
   /* padding-top: calc(7rem + 72px); */
   padding-top: 5rem;
   padding-bottom: 7rem;
-  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
   background-repeat: no-repeat;
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
   background-position: center center;
   background-attachment: scroll;
   background-size: cover;
 }
 header.masthead .masthead-content {
+  
   z-index: 1;
   position: relative;
 }
@@ -11390,15 +11391,19 @@ header.masthead .bg-circle-4 {
     height: 50px;
   } */
 
-  .resize {
-    width: 400px;
-    height: auto;
+  
 }
+
+.resize {
+  width: 400px;
+  height: auto;
+} 
 
 .resizeBannerLogo {
     width: 100px;
     height: auto;
 }
+
 
 .newButtonColor {
   display:inline-block;
