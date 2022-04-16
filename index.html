@@ -132,7 +132,7 @@
                             want to make sure the information that
                             the recorders office provides to the
                             citizens is as accurate and available as
-                            it can be./p>
+                            it can be.
                     </div>
                 </div>
             </div>
@@ -156,6 +156,9 @@
                 <!--Section: Contact v.2-->
                 <section class="mb-4">
 
+
+                <form action="php-email-form.php" method="post" role="form" class="php-email-form">
+
                     <!--Section heading-->
                     <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
                     <!--Section description-->
@@ -167,7 +170,7 @@
 
                         <!--Grid column-->
                         <div class="col-md-9 mb-md-0 mb-5">
-                            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                            <!-- <form id="contact-form" name="contact-form" action="mail.php" method="POST"> -->
 
                                 <!--Grid row-->
                                 <div class="row">
@@ -175,8 +178,11 @@
                                     <!--Grid column-->
                                     <div class="col-md-6">
                                         <div class="md-form mb-0">
-                                            <input type="text" id="name" name="name" class="form-control">
-                                            <label for="name" class="">Your name</label>
+                                            <input type="text" class="form-control" id="name" name="name" class="form-control">
+                                            <label for="name">Your name</label>
+
+                                            <!-- <label for="name">Name</label>
+                                            <input type="text" name="name" class="form-control" id="name" required>  -->
                                         </div>
                                     </div>
                                     <!--Grid column-->
@@ -184,7 +190,7 @@
                                     <!--Grid column-->
                                     <div class="col-md-6">
                                         <div class="md-form mb-0">
-                                            <input type="text" id="email" name="email" class="form-control">
+                                            <input type="text" class="form-control" id="email" name="email" class="form-control">
                                             <label for="email" class="">Your email</label>
                                         </div>
                                     </div>
@@ -197,7 +203,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="md-form mb-0">
-                                            <input type="text" id="subject" name="subject" class="form-control">
+                                            <input type="text" class="form-control" id="subject" name="subject" class="form-control">
                                             <label for="subject" class="">Subject</label>
                                         </div>
                                     </div>
@@ -211,7 +217,7 @@
                                     <div class="col-md-12">
 
                                         <div class="md-form">
-                                            <textarea type="text" id="message" name="message" rows="2"
+                                            <textarea type="text" class="form-control" id="message" name="message" rows="2"
                                                 class="form-control md-textarea"></textarea>
                                             <label for="message">Your message</label>
                                         </div>
@@ -220,13 +226,14 @@
                                 </div>
                                 <!--Grid row-->
 
-                            </form>
 
                             <div class="text-center text-md-left">
-                                <a class="newButtonColor"
-                                    onclick="document.getElementById('contact-form').submit();">Send</a>
+                                <input type="submit" class="contact-button w-100" value="Send Message" onclick="document.getElementById('contact-form').submit();">
                             </div>
-                            <div class="status"></div>
+
+                            <div class="status">
+
+                            </div>
                         </div>
                         <!--Grid column-->
 
@@ -253,6 +260,9 @@
 
                     </div>
 
+
+                </form>
+
                 </section>
                 <!--Section: Contact v.2-->
 
@@ -265,7 +275,7 @@
     <footer class="py-5 bg-black">
         <div class="container px-5">
             <a target="_blank" rel="noopener noreferrer" href="http://thetechfellas.com/">
-                 <p class="m-0 text-center text-white small">Copyright &copy; Tech Fellas 2022</p>
+                 <p class="m-0 text-center text-white small">Created by: &copy; The Tech Fellas 2022</p>
             </a>
         </div>
     </footer>
@@ -273,6 +283,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
+    <script src="js/scripts.js"></script>
+    <script src="assets/vendor/php-email-form.php"></script>
+    <script src="contact.php"></script>
+
+
 </body>
+
+
+
+
+
 
 </html>
