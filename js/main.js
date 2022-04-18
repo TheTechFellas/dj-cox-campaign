@@ -29,9 +29,9 @@
         displayError(thisForm, 'The form action property is not set!')
         return;
       }
-      thisForm.querySelector('.loading').classList.add('d-block');
-      thisForm.querySelector('.error-message').classList.remove('d-block');
-      thisForm.querySelector('.sent-message').classList.remove('d-block');
+      // thisForm.querySelector('.loading').classList.add('d-block');
+      // thisForm.querySelector('.error-message').classList.remove('d-block');
+      // thisForm.querySelector('.sent-message').classList.remove('d-block');
 
       let formData = new FormData( thisForm );
 
@@ -73,9 +73,9 @@
       }
     })
     .then(data => {
-      thisForm.querySelector('.loading').classList.remove('d-block');
+      // thisForm.querySelector('.loading').classList.remove('d-block');
       if (data.trim() == 'OK') {
-        thisForm.querySelector('.sent-message').classList.add('d-block');
+        // thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
         throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
@@ -91,6 +91,10 @@
     let body = "From: " + document.getElementById("name").value + "\n";
     body += "Email: " + document.getElementById("email").value + "\n";
     body += "Message: " + document.getElementById("message").value + "\n";
+    body += "Volunteer: " + document.querySelector('input[name="volunteerbutton"]:checked').value; + "\n";
+
+    // document.querySelector('input[name="rate"]:checked').value;
+
   
     let request = {
       "toEmail": "jordantaylor9.21@gmail.com",
@@ -112,9 +116,9 @@
       }
     })
     .then(data => {
-      document.querySelector('.loading').classList.remove('d-block');
+      // document.querySelector('.loading').classList.remove('d-block');
       if (data.trim() == 'OK') {
-        document.querySelector('.sent-message').classList.add('d-block');
+        // document.querySelector('.sent-message').classList.add('d-block');
         reset(); 
       } else {
         throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
@@ -128,9 +132,9 @@
   }
 
   function displayError(thisForm, error) {
-    document.querySelector('.loading').classList.remove('d-block');
-    document.querySelector('.error-message').innerHTML = error;
-    document.querySelector('.error-message').classList.add('d-block');
+    // document.querySelector('.loading').classList.remove('d-block');
+    // document.querySelector('.error-message').innerHTML = error;
+    // document.querySelector('.error-message').classList.add('d-block');
   }
 
   function reset(){
