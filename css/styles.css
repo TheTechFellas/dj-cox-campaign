@@ -240,7 +240,8 @@ input {
   color: #5599dd;
   text-decoration: underline;
 }
-a,
+
+a:hover,
 input:hover {
   color: #5599dd;
 }
@@ -4283,6 +4284,11 @@ textarea.form-control-lg {
     overflow-y: visible;
   }
 }
+/* @media (max-width: 992px) {
+  .navbar {
+    visibility: hidden;
+  }
+} */
 @media (min-width: 1200px) {
   .navbar-expand-xl {
     flex-wrap: nowrap;

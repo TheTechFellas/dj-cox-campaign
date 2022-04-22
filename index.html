@@ -31,11 +31,11 @@
                     class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li onclick="aboutUs()" class="nav-item"><a class="nav-link" href="#!">About D.J.</a></li>
-                    <li onclick="ourPlan()" class="nav-item"><a class="nav-link" href="#!">Our plan</a></li>
-                    <li onclick="contactUs()" class="nav-item"><a class="nav-link" href="#!">Contact Us</a></li>
+                    <li onclick="aboutUs()" class="nav-item"><a class="nav-link" href="#about">About D.J.</a></li>
+                    <li onclick="ourPlan()" class="nav-item"><a class="nav-link" href="#ourPlan">Our plan</a></li>
+                    <li onclick="contactUs()" class="nav-item"><a class="nav-link" href="#contactUs">Contact Us</a></li>
 
-                    <script>
+                    <!-- <script>
                         function aboutUs() {
                           window.scrollTo(0, 771);
                         }
@@ -47,7 +47,7 @@
                         function contactUs() {
                           window.scrollTo(0, 1680);
                         }
-                        </script>
+                    </script> -->
 
                 </ul>
             </div>
@@ -89,7 +89,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 order-lg-1">
+                <div class="col-lg-6 order-lg-1" id="about">
                     <div class="p-5">
                         <h2 class="display-4">About D.J.</h2>
                         <p>I am a native Delawarean. I currently live in
@@ -121,7 +121,7 @@
                     <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/imgSpecific/suit_1.jpg" alt="..." />
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" id="ourPlan">
                     <div class="p-5">
                         <h2 class="display-4">Our Plan</h2>
                         <p>The Kent county Recorder of Deeds is
@@ -154,7 +154,7 @@
 
                 <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p> -->
                 <!--Section: Contact v.2-->
-                <section class="mb-4">
+                <section class="mb-4" id="contactUs">
 
 
                 <form action="php-email-form.php" method="post" role="form" class="php-email-form">
