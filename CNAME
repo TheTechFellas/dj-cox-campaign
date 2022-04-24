@@ -1,1 +1,5 @@
 thecoxcampaign.com
+
+type = CNAME
+name = www
+value = TechFellasDev.github.io.
