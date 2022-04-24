@@ -97,9 +97,10 @@
 
   
     let request = {
-      "toEmail": "jordantaylor9.21@gmail.com",
+      "toEmails": ["thecoxcampaign@gmail.com"],
       "subject": document.getElementById("subject").value,
-      "body": body
+      "body": body,
+
     }
 
     fetch("https://fellas-rest.herokuapp.com/api/email", {
